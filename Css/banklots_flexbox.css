@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+One');
+
+/*font-family: 'Suez One', serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	width: 100%;
+	height: 100;
+}
+
+a {
+	color: #fa713e;
+	text-decoration: none;
+	transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+} 
+
+a:hover {
+	color: #c34f25;
+	text-decoration: none;
+	transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+} 
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* Для IE8 */
+	-o-transition: all 3s ease-out;
+	-moz-transition: all 3s ease-out;
+	-webkit-transition: all 3s ease-out;
+}
+
+hr {
+	display: block;
+	height: 2px;
+	border: 0;
+	border-top: 1px solid silver;
+	margin: 1em 0;
+	padding: 0;
+}
+
+
+header {
+	background-color: #343434;
+	padding: 0,3%;
+	color: white;
+	border-bottom: 5px solid #59595a;
+}
+
+.inner-header>.flex-element1>a>img {
+	width: 180px;
+	height: 100px;
+	/*margin-left: 5%;*/
+}
+
+.inner-header>.flex-element2>a {
+	color: white;
+}
+
+.inner-header>.flex-element2>a>span>h1 {
+	font-family: 'Roboto Slab', serif;
+}
+
+.inner-flex-element3 {
+	min-height: 104px;
+	width: 248px;
+}
+
+.inner-header>.flex-element3>.inner-flex-element3>.regist>a {
+	color: white;
+
+}
+
+.inner-header>.flex-element3>.inner-flex-element3>.enter>a {
+	color: white;
+}
+
+.inner-header>.flex-element3>.inner-flex-element3>.regist>a>.btn {
+	margin-right: 3%;
+	margin-top: 5px;
+	padding: 5px 9px;
+	font-size: 1.1em;
+	border-radius: 5px;
+	background-color: #EC6550;
+	text-shadow: #454545 0 0 2px;
+	font-family: 'Roboto Slab', serif;
+	border-bottom: 4px solid rgba(217, 91, 72, 1);
+}
+
+.inner-header>.flex-element3>.inner-flex-element3>.enter>a>.btn {
+	margin-right: 3%;
+	margin-top: 5px;
+	padding: 5px 9px;
+	font-size: 1.1em;
+	border-radius: 5px;
+	background-color: #EC6550;
+	text-shadow: #454545 0 0 2px;
+	font-family: 'Roboto Slab', serif;
+	border-bottom: 4px solid rgba(217, 91, 72, 1);
+}	
+
+.inner-header>.flex-element3>.inner-flex-element3>.regist>a:hover>.btn {
+	border-bottom: 2px solid rgba(217, 91, 72, 1);
+	margin-top: 7px;
+}
+
+.inner-header>.flex-element3>.inner-flex-element3>.regist>a:active>.btn {
+	border-bottom: 0;
+	margin-top: 9px;
+}
+
+.inner-header>.flex-element3>.inner-flex-element3>.enter>a:hover>.btn {
+	border-bottom: 2px solid rgba(217, 91, 72, 1);
+	margin-top: 7px;
+}
+
+
+.inner-header>.flex-element3>.inner-flex-element3>.enter>a:active>.btn {
+	border-bottom: 0;
+	margin-top: 9px;
+}
+
+/* Конец стилей для шапки сайта*/
+
+
+/* Стили для навигации */
+nav {
+	background-color: #343434;
+	padding: 0,3%;
+	color: white;
+	min-height: 60px;
+
+}
+
+.inner-nav {
+	height: 60px;
+}
+
+
+
+.inner-nav .flex-nav1>a {
+	color: white;
+}
+
+.inner-nav .flex-nav1>a:hover {
+	color: #dfdfdf;
+	text-decoration: underline;
+}
+
+.inner-nav .flex-nav2>a {
+	color: white;
+}
+
+.inner-nav .flex-nav2>a:hover {
+	color: #dfdfdf;
+	text-decoration: underline;
+}
+.inner-nav .flex-nav3>a {
+	color: white;
+}
+
+.inner-nav .flex-nav3>a:hover {
+	color: #dfdfdf;
+	text-decoration: underline;
+}
+.inner-nav .flex-nav4>a {
+	color: white;
+}
+
+.inner-nav .flex-nav4>a:hover {
+	color: #dfdfdf;
+	text-decoration: underline;
+}
+.inner-nav .flex-nav5>a {
+	color: white;
+}
+
+.inner-nav .flex-nav5>a:hover {
+	color: #dfdfdf;
+	/*border-bottom: 2px solid silver;*/
+	text-decoration: underline;
+}
+
+
+
+main {
+	background: #B1DCFA;
+	min-height: 600px;
+}
+
+
+/* Стили для подвала*/
+
+footer {
+	background-color: #343434;
+	width: 98%;
+	padding: 1%;
+	color: white;
+	border-top: 5px solid #59595a;
+	font-family: 'Roboto Slab', serif;
+}
+
+/*Флексю 1-й блок футера - левый*/
+.flex1 {
+	width: 35%;
+	height: 70px;
+}
+
+.inner-flex1-left, .inner-flex1-center, .inner-flex1-right {
+	font-size: 1.2em;
+}
+
+.inner-flex1-left>a, .inner-flex1-center>a, .inner-flex1-right>a  {
+	color: #f4f4f4;
+}
+
+.inner-flex1-left>a:hover, .inner-flex1-center>a:hover, .inner-flex1-right>a:hover, #rights>a:hover {
+	text-decoration: underline;
+	color: #aeaeae;
+}
+
+#rights {
+	font-size: 1.1em;
+	margin-top: 20px;
+}
+
+#rights>a {
+	color: white;
+} 
+
+/*Флексю 2-й блок футера - центральный*/
+.flex2 {
+	width: 30%;
+}
+/*Флексю 3-й блок футера - правый*/
+.flex3 {
+	width: 30%;
+}
+
+#site-name {
+	color: #f4f4f4;
+	font-size: 1.4em;
+	font-family: 'Roboto Slab', serif;
+}
+
+#site-name>span {
+	font-family: 'Suez One', serif;
+	
+}
+
+#social>a>img {
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	color: white;
+}
