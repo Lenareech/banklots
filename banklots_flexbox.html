@@ -1,47 +1,40 @@
 <!DOCTYPE html>
-<html lang = "zxx">
-<head>
-	<meta charset="utf-8">
-	<title>Идеальный поиск лотов на торгах по банкротству</title>
-	<link rel="stylesheet" type="text/css" href="Css/flexbox.css">
-	<link rel="stylesheet" type="text/css" href="Css/banklots_flexbox.css">
-	<meta name= "description" content= "Торги по банкротству. Идеальный, быстрый поиск лотов на торгах по банкротству. Обучение, методика работы, подробный алгоритм действий, лучший поиск лотов на всех электронных площадках по банкротству, найдет все скрытые лоты!">
-	<meta name="keywords" content= "Торги по банкротству, универсальный поиск, агрегатор торгов, лоты, конкурсный управляющий, ФЗ №127 О несостоятельности (банкротстве), Аукционы по банкротству, газета коммерсант, федресурс, фабрикант, сбербанк аст, лот-онлайн, этапы торгов, продажа залогового имущества должников, публичное предложение ">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="img/favicon (1).ico" rel="shortcut icon" type="image/x-icon">
-	<script type="text/javascript">
-  	function digitalWatch() {
-    var date = new Date();
-    var hours = date.getHours();
-    var minutes = date.getMinutes();
-    var seconds = date.getSeconds();
-    if (hours < 10) hours = "0" + hours;
-    if (minutes < 10) minutes = "0" + minutes;
-    if (seconds < 10) seconds = "0" + seconds;
-    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
-    setTimeout("digitalWatch()", 1000);
-  }
-</script>
-	</head>
-<body onLoad = "digital_watch()">
-	<header>
-		<div class="inner-header">
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Идеальный поиск лотов на торгах по реализации имущества должников</title>
+			<link rel="stylesheet" type="text/css" href="Css/flexbox.css">
+			<link rel="stylesheet" type="text/css" href="Css/main.css">
+			<link rel="stylesheet" type="text/css" href="Css/regist.css">
+			<link rel="stylesheet" type="text/css" href="Css/font-awesome.min.css">
+			<meta name= "description" content= "Торги по банкротству. Идеальный, быстрый поиск лотов на торгах по банкротству. Обучение, методика работы, подробный алгоритм действий, лучший поиск лотов на всех электронных площадках по банкротству, найдет все скрытые лоты!">
+			<meta name="keywords" content= "Торги по банкротству, универсальный поиск, агрегатор торгов, лоты, конкурсный управляющий, ФЗ №127 О несостоятельности (банкротстве), Аукционы по банкротству, газета коммерсант, федресурс, фабрикант, сбербанк аст, лот-онлайн, этапы торгов, продажа залогового имущества должников, публичное предложение ">
+			<script src="https://use.fontawesome.com/83516d9f9b.js"></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<script src="digitalWatch.js" async defer></script>
+			<script src="scrollTopNav.js" async defer></script>
+			<!-- подключаю библиотеку jquery -->
+			<script src="jquery-3.2.0.js"></script>
+		</head>
+		<body onload="digital_watch">
+			<header>
+				<div class="inner-header">
 					<div class = "flex-element1">
 						<a href="banklots_flexbox.html" title=" На главную">
-							<img src="Css/img/logo.jpg" title="banklots.com" alt="Лучший поисковик лотов на торгах по банкротству">	
+							<img src="data:image/jpeg;base64,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" title="banklots.com" alt="Лучший поисковик лотов на торгах по банкротству">	
 						</a>
 					</div>
 					<div class="flex-element2">
-						<a href="banklots_flexbox.html" title="Лучший поисковик лотов на торгах по банкротству">
-							<span>
-								<h1>Лучший поисковик лотов на торгах по банкротству</h1>
-							</span>
+						<a href="banklots_flexbox.html" title="Лучший поисковик лотов по банкротству">
+							<h1>Поиск лотов на торгах по реализации имущества должников</h1>
 						</a>
 					</div>
 					<div class="flex-element3">
 						<div class="inner-flex-element3">
 							<div class="regist">
-								<a href="private_office.html" title="Регистрация">
+								<a href="regist.html" title="Регистрация">
 									<div class="btn">
 										<h3>Регистрация</h3>
 									</div>
@@ -49,7 +42,7 @@
 							</div>
 
 							<div class="enter">
-								<a href="enter_lk" title="Войти">	<!--закрыл пока кнопку войти, не могу отделить их во флексбоксе, вернусь к этому позже!!! -->
+								<a href="enter_lk.html" title="Войти">
 									<div class="btn">
 											<h3>Войти</h3>
 									</div>	
@@ -58,150 +51,184 @@
 
 						</div>		
 					</div>
-		</div>
-		
-	</header>
-	 	
-	<nav>
-		<div class="inner-nav" >
-				<div class="flex-nav1">
+				</div>
+				
+			</header>
+		 	
+			<nav class="default">
+				<div id="siteMenu" >
+						<div id="menuShow">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</div>
+						<div class="flex-nav1">
+							<a href="banklots_flexbox.html" title="На главную">
+								<h3>Главная</h3>
+							</a>
+						</div>
+						<div class="flex-nav2">
+							<a href="bidding.html" title="Торги">
+								<h3>Торги</h3>
+							</a>
+						</div>
+						<div class="flex-nav3">
+							<a href="service.html" title="Сервис">
+								<h3>Сервис</h3>
+							</a>
+						</div>
+						<div class="flex-nav4">
+							<a href="how_works.html" title="Как это работает">
+								<h3>Как это работает?</h3>
+							</a>
+						</div>
+						<div class="flex-nav5">
+							<a href="about.html" title="Информация о нас">
+								<h3>Кто мы?</h3>
+							</a>
+						</div>
+						<div class="flex-nav6">
+								<script type="text/javascript">
+									var d = new Date();
+									document.write (d.toDateString());
+								</script>
+							<p id="digital_watch" style= "color: #323232; font-size: 100%; font-weight: bold;">
+								<script type="text/javascript">digitalWatch()</script></p>
+						</div>
+				</div>
+				<div id="mobileMenu">
 					<a href="banklots_flexbox.html" title="На главную">
 						<h3>Главная</h3>
-					</a>
-				</div>
-				<div class="flex-nav2">
+					</a><br>				
 					<a href="" title="Торги">
 						<h3>Торги</h3>
-					</a>
-				</div>
-				<div class="flex-nav3">
+					</a><br>							
 					<a href="" title="Сервис">
 						<h3>Сервис</h3>
-					</a>
-				</div>
-				<div class="flex-nav4">
+					</a><br>		
 					<a href="how_works.html" title="Как это работает">
 						<h3>Как это работает?</h3>
-					</a>
-				</div>
-				<div class="flex-nav5">
+					</a><br>							
 					<a href="About_me.html" title="Информация о нас">
 						<h3>Кто мы?</h3>
+					</a><br>
+					<hr>
+					<a href="regist.html" title="Регистрация">
+						Регистрация
 					</a>
+					<a href="enter_lk.html" title="Войти">Войти</a>
+																	
 				</div>
-				<div class="flex-nav6">
-					<p id="digital_watch" style= "color: #FFFFFF; font-size: 120%; font-weight: bold;">
-						<script type="text/javascript">digitalWatch();</script></p>
-				</div>
-		</div>
-	</nav>
-	<main>
-		<div class= "inner-main">
-			<div class = "flex-item">
-                <div class= "inner left">
-                	<h4>Авторизация</h4>
-                    	
-                    	<form action = "/login" method = "POST">
-		                    <p>
-		                        <label>Логин:</label>
-		                        <input type="text" name="login">
-		            		</p>
-		                    <p>
-		                        <label>Пароль:</label>
-		                        <input type="password" name="password">
-		                    </p>
-                        </form>
-                    
-                    <div class= "cont">
-                    	<div class= "flex-element">Забыли пароль </div>
-                        <div class= "flex-element">Войти </div>
-               		</div>
-           		</div>
-			</div>
-			<div class= "flex-item">
-				<div class= "inner center">
-					Поисковая строка  с формами
-					<form method = "post">
-						<input type = "text" name = "inquiry"> 
-					</form> 
-				</div>
-			</div>
-			<div class= "flex-item">
-				<div class= "inner right"> Блок с Рекламой </div>
-			</div>
-		</div>
-	</main>
-		
-	
-	<footer>
-		<div class="inner-footer">
+			</nav>
+			<article>
+				<div class= "inner_section">
+						<div class= "inner_left">
+	                		<h4>Авторизация</h4>
+	                    	
+	                    	<form action = "/login" method = "POST" class="autorization">
+			                    <div class="authorization">
+			                        <label for="login" class="authorization">Логин:</label>
+			                        <input type="text" name="login" class="authorization">
+			            		</div>
+			                    <div class="authorization">
+			                        <label for="password" class="authorization">Пароль:</label>
+			                        <input type="password" name="password" class="authorization">
+			                    </div>
+	                        
+	                    		<div>
+							    	<label class="authorization"><a href="">Забыли пароль?</a></label>
+								</div> 
+							   <div>
+							   		<button>Войти</button>
+							   	</div>
+							   <div class = authorization>
+							    	<label class="authorization">
+							    		<a href="regist.html">Регистрация</a>
+							    	</label>
+								</div> 
+	                    
+	                   		</form>
+			            </div>
+					<!--	<div class= "inner_right">
+							<input type="search" id="search" name="search">
+						</div> -->
+				</div>		
+			</article>
+			<footer>
+				<div class="inner-footer">
 
-			<div class="flex1">
-				<div class="inner-flex1-left">
-					<a href="" title="Полезно знать!">
-						<h4>Полезные ссылки</h4>
-					</a>
-				</div>
-			         <!--  <ul>Основные термины и понятия</ul>
-			            <ul><a href="http://www.consultant.ru/document/cons_doc_LAW_39331/">Федеральный закон №127 "О банкротстве"
-			                </a></ul>
-			            <ul>Список площадок и контактные данные</ul>
-			            <ul>Подводные камни, "крючки"</ul> -->
-			  	<div class="inner-flex1-center">
-			  		<a href="" title="Поддержать проект">
-			  			<h4>Поддержать проект</h4>
-			  		</a>
-			  	</div>
-			  	<div class="inner-flex1-right">
-			  		<a href="" title="Написать письмо, ваши предложения">
-			  			<h4>Обратная связь</h4>
-			  		</a>
-			  	</div>
-			  	<div id="rights"> <!-- Ниже участок кода  на php, выполнить отладку! -->
-			  		<a href="">Все права защищены &copy;<!-- <?=date('Y')?>--></a> 
-			  	</div> 
-			 </div>	
-			  	
-			<div class="flex2">
-				  <div class="inner-flex2-left">
-					  	<a href="" title="Бесплатная Демо-версия">
-					  		<h4>Demo</h4>
-					  	</a>
-				  </div> 
-				  <div class="inner-flex2-center">
-					  	<a href="" title="Подпишись, мне нравиться работа сайта!">
-					  		<h4>Подписка</h4>
-					  	</a>
-				  </div>   
-				  <div class="inner-flex2-right">
-				  		<a href="" title="Мой кабинет">
-				  			<h4>Мой кабинет</h4>
-				  		</a>
-				  </div>            
-			</div>
-			<div class="flex3">
-			     <div class="inner-flex3">
-				     	<div id="site-name">
-				     		<span>Banklots</span> - сообщество аукционеров!
-				     	</div>
-				     	<div id="social">
-				     		<a href="" title="">
-				     			<img src="img/vkom.png" title="Сообщество в VK" alt="Сообщество в VK">		     			
-				     		</a>
-				     		<a href="" title="">
-				     			<img src="img/youtube.png" title="Канал на YouTube" alt="Канал на YouTube">
-				     		</a>
-				     		<a href="" title="">
-				     			<img src="img/facebook.png" title="Сообщество в FaceBook" alt="Сообщество в FaceBook">
-				     		</a>
-				     		<a href="" title="">
-				     			<img src="img/linked.png" title="Аккаунт LinkedIn" alt="Аккаунт LinkedIn">
-				     		</a>
-				     	</div>
-			     </div>
+					<div class="flex1">
+						<div class="inner-flex1-left">
+							<a href="" title="Полезно знать!">
+								<h4>Полезные ссылки</h4>
+							</a>
+						</div>
+					         <!--  <ul>Основные термины и понятия</ul>
+					            <ul><a href="http://www.consultant.ru/document/cons_doc_LAW_39331/">Федеральный закон №127 "О банкротстве"
+					                </a></ul>
+					            <ul>Список площадок и контактные данные</ul>
+					            <ul>Подводные камни, "крючки"</ul> -->
+					  	<div class="inner-flex1-center">
+					  		<a href="" title="Поддержать проект">
+					  			<h4>Поддержать проект</h4>
+					  		</a>
+					  	</div>
+					  	<div class="inner-flex1-right">
+					  		<a href="" title="Написать письмо, ваши предложения">
+					  			<h4>Обратная связь</h4>
+					  		</a>
+					  	</div>
+					  	<div id="rights"> <!-- Ниже участок кода  на php, выполнить отладку! -->
+					  		<a href="">Все права защищены &copy;<!-- <?=date('Y')?>--></a> 
+					  	</div> 
+					 </div>	
+					  	
+					<div class="flex2">
+						  <div class="inner-flex2-left">
+							  	<a href="" title="Бесплатный период">
+							  		<h4>Demo</h4>
+							  	</a>
+						  </div> 
+						  <div class="inner-flex2-center">
+							  	<a href="" title="Подписаться!">
+							  		<h4>Подписаться</h4>
+							  	</a>
+						  </div>   
+						  <div class="inner-flex2-right">
+						  		<a href="" title="Поделиться">
+						  			<i class="fa fa-share-alt" aria-hidden="true"></i>
+						  		</a>
+						  </div>            
+					</div>
+					<div class="flex3">
+					     <div class="inner-flex3">
+						     	<div id="site-name">
+						     		<span>Banklots</span> - сообщество аукционеров!
+						     	</div>
+						     	<div id="social">
+				     				<a href="https://vk.com/aukcioneer" title="Сообщество в VK">
+					     				<i class="fa fa-vk" aria-hidden="true"></i>	     		
+					     			</a>
+					     		
+					     		
+					     			<a href="" title="Сообщество в FaceBook">
+					     				<i class="fa fa-facebook" aria-hidden="true">
+					     				</i>
+					     			</a>
+					     		
+					     		
+					     			<a href="" title="Канал на YouTube">
+					     				<i class="fa fa-youtube" aria-hidden="true"></i>
+					     			</a>
+					     		
+					     		
+					     			<a href="" title="Аккаунт LinkedIn">
+					     				<i class="fa fa-linkedin" aria-hidden="true"></i>
+					     			</a>	
+							     		
+						     	</div>
+					     </div>
 
-			</div>
-        </div>
-	</footer>
-</body>
-</html>
+					</div>
+		        </div>
+			</footer>
+		</body>		
+	</html>

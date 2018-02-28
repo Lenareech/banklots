@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang = "zxx">
+	<head>
+		<meta charset="utf-8">
+		<title>Идеальный поиск лотов на торгах по банкротству</title>
+		<link rel="stylesheet" type="text/css" href="Css/flexbox.css">
+		<link rel="stylesheet" type="text/css" href="Css/main.css">
+		<link rel="stylesheet" type="text/css" href="Css/regist.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<meta name= "description" content= "Торги по банкротству. Идеальный, быстрый поиск лотов на торгах по банкротству. Обучение, методика работы, подробный алгоритм действий, лучший поиск лотов на всех электронных площадках по банкротству, найдет все скрытые лоты!">
+		<meta name="keywords" content= "Торги по банкротству, универсальный поиск, агрегатор торгов, лоты, конкурсный управляющий, ФЗ №127 О несостоятельности (банкротстве), Аукционы по банкротству, газета коммерсант, федресурс, фабрикант, сбербанк аст, лот-онлайн, этапы торгов, продажа залогового имущества должников, публичное предложение ">
+		<script src="https://use.fontawesome.com/83516d9f9b.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<script src="digitalWatch.js" async defer></script>
+			<script src="scrollTopNav.js" async defer></script>
+		<!-- подключаю библиотеку jquerry -->
+		<script src="jquery-3.2.0.js"></script>
+	</head>
+	<body onLoad = "digital_watch()">
+		<header>
+			<div class="inner-header">
+				<div class = "flex-element1">
+					<a href="banklots_flexbox.html" title=" На главную">
+						<img src="Css/img/logo.jpg" title="banklots.com" alt="Лучший поисковик лотов по банкротству">	
+					</a>
+				</div>
+				<div class="flex-element2">
+					<a href="banklots_flexbox.html" title="Лучший поисковик лотов на торгах по банкротству">
+						<h1>Поиск лотов на торгах по реализации имущества должников</h1>
+					</a>
+				</div>
+				<div class="flex-element3">
+					<div class="inner-flex-element3">
+						<div class="regist">
+							<a href="regist.html" title="Регистрация">
+								<div class="btn">
+									<h3>Регистрация</h3>
+								</div>
+							</a>
+						</div>
+
+						<div class="enter">
+							<a href="enter_lk.html" title="Войти">
+								<div class="btn">
+										<h3>Войти</h3>
+								</div>	
+							</a>
+						</div> 
+
+					</div>		
+				</div>
+			</div>
+			
+		</header>
+	 	
+		<nav class="default">
+			<div id="siteMenu" >
+					<div id="menuShow">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<div class="flex-nav1">
+						<a href="banklots_flexbox.html" title="На главную">
+							<h3>Главная</h3>
+						</a>
+					</div>
+					<div class="flex-nav2">
+						<a href="bidding.html" title="Торги">
+							<h3>Торги</h3>
+						</a>
+					</div>
+					<div class="flex-nav3">
+						<a href="service.html" title="Сервис">
+							<h3>Сервис</h3>
+						</a>
+					</div>
+					<div class="flex-nav4">
+						<a href="how_works.html" title="Как это работает">
+							<h3>Как это работает?</h3>
+						</a>
+					</div>
+					<div class="flex-nav5">
+						<a href="about.html" title="Информация о нас">
+							<h3>Кто мы?</h3>
+						</a>
+					</div>
+					<div class="flex-nav6">
+							<script type="text/javascript">
+								var d = new Date();
+								document.write (d.toDateString());
+							</script>
+						<p id="digital_watch" style= "color: #323232; font-size: 100%; font-weight: bold;">
+							<script type="text/javascript">digitalWatch();</script></p>
+					</div>
+			</div>
+			
+			<div id="mobileMenu">
+				<a href="banklots_flexbox.html" title="На главную">
+					<h3>Главная</h3>
+				</a><br>				
+				<a href="bidding.html" title="Торги">
+					<h3>Торги</h3>
+				</a><br>							
+				<a href="service.html" title="Сервис">
+					<h3>Сервис</h3>
+				</a><br>		
+				<a href="how_works.html" title="Как это работает">
+					<h3>Как это работает?</h3>
+				</a><br>							
+				<a href="about.html" title="Информация о нас">
+					<h3>Кто мы?</h3>
+				</a><br>
+				<hr>
+				<a href="regist.html" title="Регистрация">
+					Регистрация
+				</a>
+				<a href="enter_lk.html" title="Войти">Войти</a>
+																
+			</div>
+		</nav>
+	
+		
+		<h2>ВСЯ ИНФОРМАЦИЯ ПО ТОРГАМ</h2>
+	
+	
+	<article>
+		<div id="header_search">
+	        <form action="/searching_results" method="post" name="header_search" id="form_header_search">
+                <div id="search_wrapper">
+	               <input name="search_property" id="search_property" size="20" placeholder="Поиск имущества" type="text">
+	               <label for="search_property" id="label_search_property"></label>
+	               <span class="poloska"></span>
+	                <div id="caption_all_listings" class="">
+	                   <span id="span_caption">Все объявления</span>
+	                   <div class="corner"></div>
+	                   <ul id="wrapper_all_listings">
+		                  <li>
+                            <input id="all_listings" value="checked" type="checkbox" checked="">
+                            <label for="all_listings" id="label_all_listings" class="checkbox">Все объявления</label>
+                          </li>
+                          <li>
+                            <input name="type[ads]" id="ads" value="checked" class="checkbox" type="checkbox" checked="">
+                            <label for="ads" id="label_ads" class="checkbox">Аукционы</label>
+                          </li>
+                          <li>
+                            <input name="type[debts]" id="debts" value="checked" class="checkbox" type="checkbox" checked="">
+                            <label for="debts" id="label_debts" class="checkbox">Публичные предложения</label>
+                          </li>
+		             </ul>
+	                </div>
+	                <button id="search_button" type="submit" name="search_button"></button>
+                </div>
+                <div id="wrapper_advanced_form">
+                    <div id="div_advanced_form">
+                       <button id="button_advanced_form" type="button"></button>
+                        <a href="#" id="caption_advanced_form">
+                            <span class="advanced_search">Расширенный поиск</span></a>
+                    </div>
+	                <div id="wrapper_advanced_search" style="display: none;">
+                        <div id="pointer_advanced_search"></div>
+                        <div id="body_advanced_search">
+			                <div class="table" id="table_advanced_search">
+				                <div class="row">
+					                <div class="cell"><p>Местонахождение</p></div>
+					                <div class="cell">
+						                <select size="1" name="region[]" id="region" data-placeholder="Все регионы" multiple="" style="display: none;">
+                                            <option value="Агинс">Агинский Бурятский автономный округ</option>
+                                            <option value="Адыге">Республика Адыгея</option>
+                                            <option value="Алтай">Республика Алтай</option>
+                                            <option value="Алтай">Алтайский край</option>
+                                            <option value="Амурс">Амурская область</option>
+                                            <option value="Архан">Архангельская область</option>
+                                            <option value="Астра">Астраханская область</option>
+                                            <option value="Башко">Республика Башкортостан</option>
+                                            <option value="Белго">Белгородская область</option>
+                                            <option value="Брянс">Брянская область</option>
+                                            <option value="Бурят">Республика Бурятия</option>
+                                            <option value="Влади">Владимирская область</option>
+                                            <option value="Волго">Волгоградская область</option>
+                                            <option value="Волог">Вологодская область</option>
+                                            <option value="Ворон">Воронежская область</option>
+                                            <option value="Ивано">Ивановская область</option>
+                                            <option value="Ингуш">Республика Ингушетия</option>
+                                            <option value="Иркут">Иркутская область</option>
+                                            <option value="Кабар">Кабардино-Балкарская Республика</option>
+                                            <option value="Калин">Калининградская область</option>
+                                            <option value="Калмы">Республика Калмыкия</option>
+                                            <option value="Калуж">Калужская область</option>
+                                            <option value="Камча">Камчатская область</option>
+                                            <option value="Камча">Камчатский край</option>
+                                            <option value="Карач">Республика Карачаево-Черкесия</option>
+                                            <option value="Карел">Республика Карелия</option>
+                                            <option value="Кемер">Кемеровская область</option>
+                                            <option value="Киров">Кировская область</option>
+                                            <option value="Коми">Республика Коми</option>
+                                            <option value="Коми-">Коми-Пермяцкий автономный округ</option>
+                                            <option value="Коряк">Корякский автономный округ</option>
+                                            <option value="Краснод">Краснодарский край</option>
+                                            <option value="Костр">Костромская область</option>
+                                            <option value="Красноя">Красноярский край</option>
+                                            <option value="Крым">Республика Крым</option>
+                                            <option value="Курск">Курская область</option>
+                                            <option value="Курга">Курганская область</option>
+                                            <option value="Ленин">Ленинградская область</option>
+                                            <option value="Липец">Липецкая область</option>
+                                            <option value="Магад">Магаданская область</option>
+                                            <option value="Марий">Республика Марий Эл</option>
+                                            <option value="Мордо">Республика Мордовия</option>
+                                            <option value="Москв">г. Москва</option>
+                                            <option value="Моско">Московская область</option>
+                                            <option value="Мурма">Мурманская область</option>
+                                            <option value="Ненец">Ненецкий автономный округ</option>
+                                            <option value="Дагес">Республика Дагестан</option>
+                                            <option value="Нижег">Нижегородская область</option>
+                                            <option value="Новго">Новгородская область</option>
+                                            <option value="Новос">Новосибирская область</option>
+                                            <option value="Омска">Омская область</option>
+                                            <option value="Оренб">Оренбургская область</option>
+                                            <option value="Орлов">Орловская область</option>
+                                            <option value="Пензе">Пензенская область</option>
+                                            <option value="Пермс">Пермская область</option>
+                                            <option value="Пермс">Пермский край</option>
+                                            <option value="Примо">Приморский край</option>
+                                            <option value="Псков">Псковская область</option>
+                                            <option value="Росто">Ростовская область</option>
+                                            <option value="Рязан">Рязанская область</option>
+                                            <option value="Самар">Самарская область</option>
+                                            <option value="Санкт">г. Санкт-Петербург</option>
+                                            <option value="Сарат">Саратовская область</option>
+                                            <option value="Еврей">Еврейская автономная область</option>
+                                            <option value="Саха ">Республика Саха (Якутия)</option>
+                                            <option value="Сверд">Свердловская область</option>
+                                            <option value="Сахал">Сахалинская область</option>
+                                            <option value="Севас">г.Севастополь</option>
+                                            <option value="Забай">Забайкальский край</option>
+                                            <option value="Север">Республика Северная Осетия-Алания</option>
+                                            <option value="Смоле">Смоленская область</option>
+                                            <option value="Ставр">Ставропольский край</option>
+                                            <option value="Таймы">Таймырский (Долгано-Ненецкий) автономный округ</option>
+                                            <option value="Тамбо">Тамбовская область</option>
+                                            <option value="Татар">Республика Татарстан</option>
+                                            <option value="Тверс">Тверская область</option>
+                                            <option value="Томск">Томская область</option>
+                                            <option value="Тульс">Тульская область</option>
+                                            <option value="Тыва">Республика Тыва</option>
+                                            <option value="Тюмен">Тюменская область</option>
+                                            <option value="Удмур">Удмуртская Республика</option>
+                                            <option value="Ульян">Ульяновская область</option>
+                                            <option value="Усть-">Усть-Ордынский Бурятский автономный округ</option>
+                                            <option value="Хабар">Хабаровский край</option>
+                                            <option value="Хакас">Республика Хакасия</option>
+                                            <option value="Ханты">Ханты-Мансийский автономный округ - Югра</option>
+                                            <option value="Челяб">Челябинская область</option>
+                                            <option value="Чечен">Чеченская республика</option>
+                                            <option value="Чечен">Чеченская Республика</option>
+                                            <option value="Читин">Читинская область</option>
+                                            <option value="Чуваш">Чувашская Республика</option>
+                                            <option value="Чукот">Чукотский автономный округ</option>
+                                            <option value="Эвенк">Эвенкийский автономный округ</option>
+                                            <option value="Ямало">Ямало-Ненецкий автономный округ</option>
+                                            <option value="Яросл">Ярославская область</option>
+						</select>
+						                <div class="chosen-container chosen-container-multi" style="width: 218px;" title="" id="region_chosen">                                                       <ul class="chosen-choices">                                                          <li class="search-field">                                                            <input type="text" value="Все регионы" class="default" autocomplete="off" style="width: 101px;">                                              </li>
+						                  </ul>
+						                  <div class="chosen-drop">
+						                      <ul class="chosen-results"></ul>
+						                  </div>
+						                  </div>
+					                </div>
+				                </div>
+				                <div class="row">
+                                    <div class="cell"><p>Стоимость, руб.</p></div>
+                                    <div class="cell">
+                                        <input type="text" name="price_range_min" id="price_range_min" size="6" value="" placeholder="от"><span> - </span><input type="text" name="price_range_max" id="price_range_max" size="9" value="" placeholder="до">
+                                    </div>
+				                </div>
+				                <div class="row">
+                                    <div class="cell"><p>Тип объявления</p></div>
+                                    <div class="cell">
+                                        <p class="text_left">
+                                            <input name="listing_type[auction]" id="auction" value="checked" type="checkbox">
+                                            <label for="auction">Аукционы</label>
+                                        </p>
+                                        <p class="text_left">
+                                            <input name="listing_type[public]" id="public" value="checked" type="checkbox">
+                                            <label for="public">Публичные предложения</label>
+                                        </p>
+                                        <p class="text_left">
+                                            <input name="listing_type[fix_price]" id="fix_price" value="checked" type="checkbox">
+                                            <label for="fix_price">Фиксированная цена</label>
+                                        </p>
+                                        <p class="text_left">
+                                            <input name="listing_type[first_price]" id="first_price" value="checked" type="checkbox">
+                                            <label for="first_price">Начальная цена</label>
+                                        </p>
+                                    </div>
+				</div>
+				                <div class="row">
+                                    <div class="cell"><p>Категория</p></div>
+                                    <div class="cell">
+                                        <select size="1" data-placeholder="Все категории" name="category[]" id="category" multiple="" style="display: none;">
+                                            <optgroup label="Транспорт и техника">
+                                                <option value="20">Легковой транспорт</option>
+                                                <option value="21">Грузовой и коммерческий транспорт</option>
+                                                <option value="22">Спецтехника</option>
+                                                <option value="61">Прочий транспорт</option>
+                                             </optgroup>
+                                             <optgroup label="Недвижимость">
+                                                 <option value="23">Жилая недвижимость</option>
+                                                 <option value="24">Коммерческая недвижимость</option>
+                                                 <option value="25">Земельные участки</option>
+                                             </optgroup>
+
+                                             <optgroup label="Оборудование ">
+                                                 <option value="26">Промышленное оборудование</option>
+                                                 <option value="50">Другое</option>
+                                             </optgroup>
+                                            <option value="19">Ценные бумаги</option>
+                                        </select>
+						<div class="chosen-container chosen-container-multi" style="width: 218px;" title="" id="category_chosen">
+						  <ul class="chosen-choices">
+						        <li class="search-field"><input type="text" value="Все категории" class="default" autocomplete="off" style="width: 110px;">
+						        </li>
+						  </ul>
+				          <div class="chosen-drop"><ul class="chosen-results"></ul></div>
+				        </div>
+					</div>
+				                </div>
+				                <div class="row">
+                                    <div class="cell">
+                                    </div>
+                                    <div class="cell">
+                                        <div id="button_cell">
+                                            <button type="submit" name="find_button" id="find_button">Искать</button>
+                                            <button type="reset" name="clear_button" id="clear_button">Очистить</button>
+                                        </div>
+                                    </div>
+				                </div>
+
+			                </div>
+		                </div>
+	                </div>
+                </div>
+            </form>
+        </div>
+	</article>
+		
+	<footer>
+		<div class="inner-footer">
+
+			<div class="flex1">
+				<div class="inner-flex1-left">
+					<a href="" title="Полезно знать!">
+						<h4>Полезные ссылки</h4>
+					</a>
+				</div>
+			         <!--  <ul>Основные термины и понятия</ul>
+			            <ul><a href="http://www.consultant.ru/document/cons_doc_LAW_39331/">Федеральный закон №127 "О банкротстве"
+			                </a></ul>
+			            <ul>Список площадок и контактные данные</ul>
+			            <ul>Подводные камни, "крючки"</ul> -->
+			  	<div class="inner-flex1-center">
+			  		<a href="" title="Поддержать проект">
+			  			<h4>Поддержать проект</h4>
+			  		</a>
+			  	</div>
+			  	<div class="inner-flex1-right">
+			  		<a href="" title="Написать письмо, ваши предложения">
+			  			<h4>Обратная связь</h4>
+			  		</a>
+			  	</div>
+			  	<div id="rights"> <!-- Ниже участок кода  на php, выполнить отладку! -->
+			  		<a href="">Все права защищены &copy;<!-- <?=date('Y')?>--></a> 
+			  	</div> 
+			 </div>	
+			  	
+			<div class="flex2">
+				  <div class="inner-flex2-left">
+					  	<a href="" title="Бесплатный период">
+					  		<h4>Demo</h4>
+					  	</a>
+				  </div> 
+				  <div class="inner-flex2-center">
+					  	<a href="" title="Подписаться!">
+					  		<h4>Подписаться</h4>
+					  	</a>
+				  </div>   
+				  <div class="inner-flex2-right">
+				  		<a href="" title="Поделиться">
+				  			<i class="fa fa-share-alt" aria-hidden="true"></i>
+				  		</a>
+				  </div>            
+			</div>
+			<div class="flex3">
+			     <div class="inner-flex3">
+				     	<div id="site-name">
+				     		<span>Banklots</span> - сообщество аукционеров!
+				     	</div>
+				     	<div id="social">
+		     				<a href="" title="Сообщество в VK">
+			     				<i class="fa fa-vk" aria-hidden="true"></i>	     		
+			     			</a>
+			     		
+			     		
+			     			<a href="" title="Сообщество в FaceBook">
+			     				<i class="fa fa-facebook" aria-hidden="true">
+			     				</i>
+			     			</a>
+			     		
+			     		
+			     			<a href="" title="Канал на YouTube">
+			     				<i class="fa fa-youtube" aria-hidden="true"></i>
+			     			</a>
+			     		
+			     		
+			     			<a href="" title="Аккаунт LinkedIn">
+			     				<i class="fa fa-linkedin" aria-hidden="true"></i>
+			     			</a>	
+					     		
+				     	</div>
+			    	 </div>
+
+				</div>
+        	</div>
+		</footer>
+	</body>
+</html>

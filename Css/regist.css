@@ -1,0 +1,58 @@
+article{ 
+	width: auto;	
+	height: 500px;	
+	display: flex;
+	text-align: left;
+	flex-wrap: wrap;
+	flex-direction: row;	
+	justify-content: space-around;	
+	align-items: stretch;
+	align-content: stretch;	
+}
+
+.left{
+	width: 500px; 
+	height: auto; 
+	margin: 10px; 
+	display: block; 
+	text-align: left; 
+	align-self: auto; 
+	order: 0; 
+	flex: 0 1 auto; 
+	padding: 20px;
+
+}
+
+.right {
+	width: 600px; 
+	height: auto; 
+	margin: 10px; 
+	display: block; 
+	align-self: auto; 
+	order: 0; 
+	flex: 0 1 auto;
+	padding: 20px; 
+	text-align: left;
+}
+
+form.regist {
+	width: 500px;
+}
+
+label {
+	cursor: pointer;
+	float: left;
+
+}
+ 
+ .form {
+ 	clear:both; 
+ 	text-align: right;
+ 	width: 350px;
+ }
+
+
+
+
+ 
+ 
